@@ -4,7 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Red Bull</title>
+        <link rel="icon" type="image/png" href="path_to_your_icon/favicon.png"/> <!-- Añade tu favicon aquí -->
     <style>
+        /* Estilos existentes... */
+        
+        /* Media queries para responsividad */
+        @media (max-width: 768px) {
+            /* Ajusta los estilos aquí para dispositivos móviles */
+            nav a {
+                margin: 0 5px; /* Menos espacio entre enlaces */
+                font-size: 14px; /* Tamaño de fuente más pequeño */
+            }
+            header, section {
+                padding: 10px; /* Menos padding para ajustar contenido */
+            }
+        }
+
+        /* Efecto hover en el menú */
+        nav a:hover {
+            color: red; /* Cambia el color al pasar el mouse */
+        }
         body {
             background-color: #001a30;
             margin: 0;
