@@ -3,84 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sergio Pérez | Perfil</title>
+    <title>Sergio Pérez | Red Bull</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        body, html {
             margin: 0;
             padding: 0;
-            background-color: #000; /* Fondo oscuro para contraste */
-            color: #fff; /* Texto blanco para legibilidad */
+            width: 100%;
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+            scroll-behavior: smooth;
         }
-        .header {
-            background-color: #e60000; /* Rojo Red Bull */
-            color: #fff;
-            padding: 20px 0;
+        .hero-section {
+            background-image: url('tu-imagen-de-fondo.jpg');
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+        .hero-section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        .section {
+            padding: 50px 20px;
             text-align: center;
         }
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px;
-        }
-        .profile-pic {
-            width: 100%;
-            height: auto;
-            border-radius: 50%;
-            margin: 20px 0;
-        }
-        h1, h2, p {
-            margin: 10px 0;
-        }
-        .achievements {
-            background-color: #1a1a1a; /* Fondo más oscuro para la sección */
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 10px;
-        }
-        .gallery {
+        .gallery-display {
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
             gap: 10px;
         }
-        .gallery img {
+        .gallery-display img {
             width: calc(33.333% - 10px);
             height: auto;
-            border-radius: 10px;
+            border-radius: 8px;
         }
         @media (max-width: 768px) {
-            .gallery img {
-                width: calc(50% - 10px); /* Ajuste para pantallas más pequeñas */
+            .gallery-display img {
+                width: calc(50% - 10px);
             }
         }
     </style>
 </head>
 <body>
 
-<div class="header">
-    <h1>Sergio Pérez</h1>
+<div class="hero-section" id="home">
+    <div class="hero-content">
+        <h1>Sergio "Checo" Pérez</h1>
+        <p>Explora la carrera de un campeón en la Fórmula 1</p>
+    </div>
 </div>
 
-<div class="container">
-    <div class="profile-section">
-        <img src="images peres/checo.gif" alt="Sergio Pérez" class="profile-pic">
-        <h2>Biografía</h2>
-<p>Sus actuaciones le valieron el fichaje por McLaren en 2013, pero en un año complicado para el equipo, su estancia fue corta y al final de la temporada pasó a Force India, donde pasaría los siguientes cinco años, logrando cinco podios ante el equipo. fue vendido y rebautizado como Racing Point.</p>
+<div class="section" id="biography">
+    <h2>Biografía</h2>
+    <p>Texto detallado sobre la vida y carrera de Sergio Pérez...</p>
+</div>
 
-<p>Fue con Racing Point que Checo consiguió su primera victoria en F1. Checo, que quedó al final del campo después de una colisión en la primera vuelta en el Gran Premio de Sakhir 2020, protagonizó una impresionante remontada para avanzar entre los participantes y conseguir una victoria notable.</p>
-    </div>
-    
-    <div class="achievements">
-        <h2>Logros Destacados</h2>
-        <p>Lista de logros aquí...</p>
-    </div>
-    
-    <div class="gallery">
-        <h2>Galería</h2>
-        <img src="images peres/checo.png" alt="Imagen 1">
-        <img src="URL_IMAGEN2" alt="Imagen 2">
-        <img src="URL_IMAGEN3" alt="Imagen 3">
-        <!-- Añade más imágenes según sea necesario -->
+<div class="section" id="achievements">
+    <h2>Logros Destacados</h2>
+    <p>Una lista de los logros más significativos de Sergio Pérez en su carrera.</p>
+</div>
+
+<div class="section" id="gallery">
+    <h2>Galería</h2>
+    <div class="gallery-display">
+        <img src="tu-imagen1.jpg" alt="Imagen 1">
+        <img src="tu-imagen2.jpg" alt="Imagen 2">
+        <img src="tu-imagen3.jpg" alt="Imagen 3">
+        <!-- Más imágenes aquí -->
     </div>
 </div>
 
