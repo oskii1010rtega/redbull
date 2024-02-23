@@ -52,13 +52,36 @@
             color: #ffffff;
             text-align: justify;
         }
-        nav {
-            background-color: #D2003C;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-         
-        }
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #120C3B;
+    padding: 10px;
+}
+
+#logo {
+    max-width: 150px; /* Ajusta según necesites */
+    height: auto;
+}
+
+#nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Opcional: para mejorar la responsividad */
+@media (max-width: 768px) {
+    #nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #logo {
+        max-width: 100px; /* Más pequeño en dispositivos móviles */
+    }
+}
         nav a {
             color: #ffffff;
             text-decoration: none;
@@ -140,13 +163,17 @@
 <body>
     <header id="inicio">
         <img src="imeges redbull/logored.png" alt="Logo" id="logo">
-        <nav>
-            <a href="https://oskii1010rtega.github.io/f1">Inicio</a>
-            <a href="#historia">Historia</a>
-            <a href="#pilotos">Pilotos</a>
-            <a href="#coches">Coches</a>
-            <a href="#logros_trofeos">Logros y Trofeos</a>
-        </nav>
+<nav>
+    <a href="https://oskii1010rtega.github.io/f1" id="logo-container">
+        <img src="imeges redbull/logored.png" alt="Logo" id="logo">
+    </a>
+    <div id="nav-links">
+        <a href="#historia">Historia</a>
+        <a href="#pilotos">Pilotos</a>
+        <a href="#coches">Coches</a>
+        <a href="#logros_trofeos">Logros y Trofeos</a>
+    </div>
+</nav>
         <hr>
     </header>
     <section id="historia">
