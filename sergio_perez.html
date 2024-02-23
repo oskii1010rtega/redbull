@@ -1,83 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil de Sergio Perez</title>
+    <title>Sergio Pérez | Perfil</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #001a30; /* Puedes quitar esta línea si la imagen de fondo es suficiente */
-            background-image: url('images perez/carro_checo.png'); /* Añade la URL de tu imagen aquí */
-            background-size: cover; /* Cubre todo el fondo; usa contain para ajustar toda la imagen */
-            background-position: center; /* Centra la imagen de fondo */
             margin: 0;
             padding: 0;
+            background-color: #000; /* Fondo oscuro para contraste */
+            color: #fff; /* Texto blanco para legibilidad */
         }
-        .perfil {
-            max-width: 600px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #001a30; /* Considera hacer este fondo parcialmente transparente si quieres que se vea la imagen de fondo */
-            border-radius: 40px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .foto {
+        .header {
+            background-color: #e60000; /* Rojo Red Bull */
+            color: #fff;
+            padding: 20px 0;
             text-align: center;
         }
-        .foto img {
-            width: 200px;
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .profile-pic {
+            width: 100%;
             height: auto;
             border-radius: 50%;
-            margin-bottom: 10px;
+            margin: 20px 0;
         }
-        .nombre {
-            text-align: center;
-            font-size: 24px;
-            color: #ffffff;
+        h1, h2, p {
+            margin: 10px 0;
         }
-        .descripcion {
-            margin-top: 20px;
-            text-align: justify;
-            color: #ffffff;
+        .achievements {
+            background-color: #1a1a1a; /* Fondo más oscuro para la sección */
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .gallery img {
+            width: calc(33.333% - 10px);
+            height: auto;
+            border-radius: 10px;
+        }
+        @media (max-width: 768px) {
+            .gallery img {
+                width: calc(50% - 10px); /* Ajuste para pantallas más pequeñas */
+            }
         }
     </style>
 </head>
 <body>
 
-<div class="perfil">
-    <div class="foto">
-        <img src="images perez/checo.gif" alt>
-    </div>
-    <div class="nombre">
-        Sergio Perez
-    </div>
-    <div class="descripcion">
-        <p>Sergio "Checo" Pérez Mendoza es un piloto de automovilismo mexicano, nacido el 26 de enero de 1990 en Guadalajara, Jalisco.</p>
-        <p>Pérez debutó en la Fórmula 1 en 2011 con el equipo Sauber, antes de pasar por equipos como McLaren y Force India (actual Racing Point). Desde 2021, compite con el equipo Red Bull Racing, siendo compañero de equipo de Max Verstappen.</p>
-        <p>Conocido por su habilidad para administrar neumáticos y su estilo agresivo en la pista, Pérez ha logrado múltiples podios a lo largo de su carrera en la Fórmula 1.</p>
-        Después de mudarse, solo, de México a Alemania a la tierna edad de 14 años para competir en la Fórmula BMW, el piloto de Guadalajara ascendió rápidamente en las categorías junior hasta finalmente conseguir el segundo puesto en la clasificación de GP2 de 2010.
-       <p>Eso le valió a Checo el llamado a la F1 y debutó en la F1 en 2011 con Sauber. Pronto se forjó una reputación como podio en serie y maestro indiscutible de los neumáticos Pirelli, y logró tres resultados entre los tres primeros en 2012.</p>
+<div class="header">
+    <h1>Sergio Pérez</h1>
+</div>
 
+<div class="container">
+    <div class="profile-section">
+        <img src="images peres/checo.gif" alt="Sergio Pérez" class="profile-pic">
+        <h2>Biografía</h2>
 <p>Sus actuaciones le valieron el fichaje por McLaren en 2013, pero en un año complicado para el equipo, su estancia fue corta y al final de la temporada pasó a Force India, donde pasaría los siguientes cinco años, logrando cinco podios ante el equipo. fue vendido y rebautizado como Racing Point.</p>
 
 <p>Fue con Racing Point que Checo consiguió su primera victoria en F1. Checo, que quedó al final del campo después de una colisión en la primera vuelta en el Gran Premio de Sakhir 2020, protagonizó una impresionante remontada para avanzar entre los participantes y conseguir una victoria notable.</p>
-
-<p>La victoria resultó crucial para Checo para asegurar su futuro en la F1. Con Racing Point listo para reemplazarlo en 2021, Checo estaba en peligro de quedarse fuera de la parrilla. Pero cuando terminó la temporada, el asiento opuesto a Max quedó disponible y el equipo se abalanzó, valorando la experiencia, la habilidad de carrera y el ritmo del piloto mexicano.</p>
-
-<p>La primera temporada de Checo con el equipo resultó ser a la vez complicada y triunfal. La adaptación a la nueva maquinaria llevó algún tiempo, pero Checo progresó rápidamente y en Bakú, el mexicano consiguió una magnífica primera victoria tras una espectacular reanudación en las últimas etapas de la carrera.</p>
-
-<p>También demostró ser uno de los grandes jugadores del equipo de la F1 en la ronda final en Abu Dhabi, donde una brillante actuación defensiva con neumáticos viejos le permitió defenderse de los repetidos ataques del actual campeón del mundo Lewis Hamilton. Su resistencia permitió a Max Verstappen cerrar la brecha lo suficiente como para aprovechar un Safety Car tardío y ganar la carrera y el título de Pilotos de 2021. Su conmovedora negativa a ceder ante la presión pronto le valió a Checo un nuevo apodo como “el Ministro de Defensa de México”.</p>
-
-<p>Checo no ha vuelto a mirar atrás desde entonces. En su segunda temporada en el equipo, junto con sus incomparables habilidades defensivas y de gestión de carrera, demostró ser uno de los grandes luchadores callejeros de este deporte con victorias en Mónaco y Singapur y logró su mejor resultado en el campeonato, en tercer lugar y con su mayor siempre puntos de recorrido de 305.</p>
-
-<p>Ahora firmemente asentado en el Equipo, nuestro Ministro de Defensa mexicano está listo para subir de nivel nuevamente pasando a la ofensiva y luchando por aún más podios, victorias y la lucha por el premio final.</p>
-
-         <div class="foto">
-              <img src="images perez/arri.png" alt>
-         </div>
-       
-
+    </div>
+    
+    <div class="achievements">
+        <h2>Logros Destacados</h2>
+        <p>Lista de logros aquí...</p>
+    </div>
+    
+    <div class="gallery">
+        <h2>Galería</h2>
+        <img src="images peres/checo.png" alt="Imagen 1">
+        <img src="URL_IMAGEN2" alt="Imagen 2">
+        <img src="URL_IMAGEN3" alt="Imagen 3">
+        <!-- Añade más imágenes según sea necesario -->
     </div>
 </div>
 
